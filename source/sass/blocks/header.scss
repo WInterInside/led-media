@@ -28,7 +28,7 @@
 .header__wrapper {
   display: flex;
   max-width: 1760px;
-  padding: 0 40px;
+  padding: 0 30px;
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
@@ -142,10 +142,7 @@
 
   @media (max-width: 710px) {
     margin-left: 0;
-  }
-
-  @media (max-width: 420px) {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 

@@ -19,10 +19,11 @@
   cursor: pointer;
 
   &--green {
-    margin-right: 40px;
     transition: 0.5s;
     background: linear-gradient(180deg, #BDF040 0%, #8BB32A 100%);
     box-shadow: inset 0px 6px 13px #DEFC95;
+
+
 
     &:hover {
       transition: 0.5s;
@@ -32,9 +33,15 @@
   }
 
   &--blue {
+
+    margin-right: 40px;
     background: linear-gradient(180deg, #5CD9F8 0%, #23A0BF 100%);
     border: 1px solid #43BCDA;
     box-shadow: inset 0px 6px 13px #8AE8FF;
+
+    @media (max-width: 420px) {
+      margin-right: 20px;
+    }
 
     &:hover {
       transition: 0.5s;

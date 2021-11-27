@@ -1,62 +1,14 @@
 /* Слайдер */
 .slick-slider {
+  width: 808px;
+  padding: 0 53px;
+  height: 538px;
   position: relative;
-  width: 100%;
-  padding: 0 60px;
 
-  @media (max-width: 940px) {
-    padding: 0 42px;
-  }
-
-  @media (max-width: 760px) {
-    padding: 0 0 28px 0;
-  }
-}
-
-/* Стрелка */
-.slider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  margin-top: -21px;
-  width: 42px;
-  height: 42px;
-  border-radius: 6px;
-  background: linear-gradient(180deg, rgba(254, 75, 96, 1) 32%, rgba(255, 27, 53, 1) 68%);
-  border: none;
-  font-size: 0;
-
-  &::before {
-    @include pseudo;
-    top: 50%;
-
-    margin-top: -4px;
-
-    border: solid #ffffff;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-  }
-}
-
-/* Стрелка влево */
-.slick-arrow.slick-prev {
-  left: 0;
-
-  &::before {
-    left: 18px;
-    transform: rotate(135deg);
-  }
-}
-
-/* Стрелка вправо */
-.slick-arrow.slick-next {
-  right: 0;
-
-  &::before {
-
-    right: 18px;
-    transform: rotate(-45deg);
-  }
+  background-image: url("../img/screen.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .slick-list {
@@ -65,66 +17,74 @@
 
 /* Лента слайдов */
 .slick-track {
+  margin-top: 35px;
   display: flex;
 }
 
 /* Слайд */
 .slick-slide {
   display: flex;
+  height: 290px;
   justify-content: center;
-  width: 290px;
-  min-height: 250px;
-  padding: 15px 0 20px 30px;
   background-image: url("../img/slide-bg.jpg");
   background-position: left;
   background-repeat: no-repeat;
-  background-size: contain;
-
-
-  @media (max-width: 1370px) {
-    background-position: 40px center;
-  }
-
-  @media (max-width: 760px) {
-    background-position: center;
-  }
-}
-
-.slider .slider-link {
-  display: flex;
-  width: 275px;
-  height: 214px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 8px 30px -10px #01c9f9;
-  cursor: pointer;
-
+  background-size: cover;
 }
 
 /* Точки (булиты) */
-.slick-dots{
+.slick-dots {
+  position: relative;
+  margin-top: -40px;
   display: flex;
   justify-content: center;
   align-self: center;
+  z-index: 1111;
+  background-color: transparent;
 }
 
 .slick-dots li{
   list-style: none;
-  margin: 0 5px;
+  margin: 0 11px;
 }
 /* Активная точка */
 .slick-dots li.slick-active button{
-  background: linear-gradient(180deg, rgba(254, 75, 96, 1) 32%, rgba(255, 27, 53, 1) 68%);
+  background: linear-gradient(180deg,#bdf040 0,#8bb32a 100%);
 }
 /* Элемент точки */
-.slick-dots li button{
-  width: 15px;
-  height: 15px;
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   border: none;
   font-size: 0;
-  border: 1px solid #f76161;
+  border: 1px solid gray;
+  background-color: transparent;
 }
 
+.slider__content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.slider__text {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+
+  &--colored {
+    color: #5CD9F8;
+  }
+
+  &--large {
+    padding-top: 6px;
+    margin-right: 14px;
+    font-size: 95px;
+    line-height: 21px;
+    color: #5CD9F8;
+  }
+}

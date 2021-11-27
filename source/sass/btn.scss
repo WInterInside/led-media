@@ -19,6 +19,7 @@
   cursor: pointer;
 
   &--green {
+    margin-right: 40px;
     transition: 0.5s;
     background: linear-gradient(180deg, #BDF040 0%, #8BB32A 100%);
     box-shadow: inset 0px 6px 13px #DEFC95;

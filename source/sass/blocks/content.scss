@@ -1,7 +1,12 @@
 .content {
+  min-height: 960px;
   padding-top: 60px;
   padding-left: 365px;
   padding-right: 365px;
+
+  background-image: url("../img/screen.webp");
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .content__caption {
@@ -34,5 +39,5 @@
   display: flex;
   margin-top: 45px;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
 }

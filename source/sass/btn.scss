@@ -18,12 +18,21 @@
   transition: 0.5s;
   cursor: pointer;
 
+
+  @media (max-width: 560px) {
+    min-height: 50px;
+    padding: 5px 10px;
+  }
+
   &--green {
     transition: 0.5s;
     background: linear-gradient(180deg, #BDF040 0%, #8BB32A 100%);
     box-shadow: inset 0px 6px 13px #DEFC95;
 
-
+    @media (max-width: 600px) {
+      width: 100%;
+      margin-right: 0;
+    }
 
     &:hover {
       transition: 0.5s;
@@ -39,8 +48,10 @@
     border: 1px solid #43BCDA;
     box-shadow: inset 0px 6px 13px #8AE8FF;
 
-    @media (max-width: 420px) {
-      margin-right: 20px;
+    @media (max-width: 600px) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
     }
 
     &:hover {

@@ -74,7 +74,6 @@
 
   &--qiangli {
     margin-top: 80px;
-    margin-bottom: 120px;
   }
 
   &--ways {
@@ -99,7 +98,7 @@
 
   &--qiangli {
     position: absolute;
-    bottom: -65px;
+    bottom: -5px;
     right: 190px;
     z-index: 111;
     width: 48px;
@@ -200,7 +199,6 @@
 
     @media (max-width: 1151px) {
       padding-right: 0;
-      margin-bottom: 0;
     }
   }
 
@@ -232,6 +230,14 @@
   @media (max-width: 1151px) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  &--qiangli {
+    padding-right: 60px;
+
+    @media (max-width: 1151px) {
+      padding-right: 0;
+    }
   }
 
   &--ways {

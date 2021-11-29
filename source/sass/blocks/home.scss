@@ -1,15 +1,14 @@
 .home--link {
-  position: absolute;
   z-index: 111;
-  bottom: 10px;
-  right: 10px;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  margin-left: 50px;
 
   background: linear-gradient(180deg, #5CD9F8 0%, #23A0BF 100%);
   border: 1px solid #43BCDA;
@@ -22,6 +21,17 @@
   }
 
   @media (min-width: 1151px) {
+    display: none;
+  }
+}
+
+.madein {
+  position: absolute;
+  z-index: 111;
+  right: calc(50% - 85px);
+  bottom: 0;
+
+  @media (max-width: 1151px) {
     display: none;
   }
 }

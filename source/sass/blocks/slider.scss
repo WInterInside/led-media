@@ -22,14 +22,17 @@
   }
 
   @media (max-width: 560px) {
-    padding: 0 21px;
-    width: 320px;
-    height: 150px;
+    width: 100%;
+    background-image: none;
+    padding: 0;
+    // padding: 0 21px;
+    // width: 320px;
+    // height: 150px;
   }
 
-  @media (max-width: 330px) {
-    margin-left: -10px;
-  }
+  // @media (max-width: 330px) {
+  //   margin-left: -10px;
+  // }
 }
 
 .slick-list {
@@ -45,9 +48,9 @@
     margin-top: 20px;
   }
 
-  @media (max-width: 560px) {
-    margin-top: 10px;
-  }
+  // @media (max-width: 560px) {
+  //   margin-top: 10px;
+  // }
 }
 
 /* Слайд */
@@ -64,9 +67,9 @@
     height: 200px;
   }
 
-  @media (max-width: 560px) {
-    height: 120px;
-  }
+  // @media (max-width: 560px) {
+  //   height: 120px;
+  // }
 }
 
 /* Точки (булиты) */
@@ -115,10 +118,6 @@
 
   @media (max-width: 830px) {
     width: 80%;
-  }
-
-  @media (max-width: 560px) {
-    width: 100%;
   }
 }
 
